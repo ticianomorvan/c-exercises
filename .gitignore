@@ -1,0 +1,9 @@
+*
+!*.*
+!*/
+!Makefile
+
+**/.cache
+**/compile_commands.json
+*.o
+*.out
