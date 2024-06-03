@@ -2,7 +2,7 @@ CC = gcc
 CFLAGS = -Wall -Wextra -Werror -pedantic -std=c99 -g
 SOURCES = main.c
 OBJECTS = $(SOURCES:.c=.o)
-TARGET = backtracking 
+TARGET = backpack
 
 .PHONY: clean
 
