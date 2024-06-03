@@ -1,7 +1,6 @@
 #include <stdio.h>
 #include <stdlib.h>
 #include <limits.h>
-#define ARRAY_SIZE 6
 
 void print_array(float array[], float length) {
 	for (int i = 0; i < length; ++i) {
@@ -60,10 +59,13 @@ float *calculate_coins_needed(float total, float coins[], float coins_length) {
 }
 
 int main(void) {
+	float total;
 	float coins[] = { 0.10, 0.25, 0.50, 1.0 };
 	int coins_length = (float) sizeof (coins) / sizeof (float);	
 
-	float total = 50.25;
+	printf("Dé el cambio a darse en monedas de 10, 25, 50 centavos y un peso: ");
+	scanf("%f", &total);
+
 	float *solution = calculate_coins_needed(total, coins, coins_length);
 
 	printf("Para un total de %.2f, se pueden usar monedas de: ", total);
