@@ -18,7 +18,7 @@ location *calculate_refuel(location locations[], unsigned int locations_length, 
 	location l;
 	location *locations_to_refuel = NULL;
 	unsigned int j = 0;
-  unsigned int fuel_left = 0u;
+	unsigned int fuel_left = 0u;
 
 	locations_to_refuel = (location *) calloc(locations_length, sizeof (location));
 
