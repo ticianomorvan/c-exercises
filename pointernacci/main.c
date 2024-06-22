@@ -1,17 +1,17 @@
 #include <stdio.h>
 #include <stdlib.h>
 
-#include "struct.h"
+#include "root.h"
 
-#define INDEX 500
+#define INDEX 0
 
 int main(void) {
-	node n = node_create();
-	n = node_extend(n, INDEX);
-	node_elem e = node_index(n, INDEX);
+	root r = root_create();
+	r = root_extend(r, 125);
+	root_elem e = root_index(r, INDEX);
 	printf("The %i-th element of the Fibonacci succession is: %llu\n", INDEX, e);
-	node_dump(n, stdout);
+	root_dump(r, stdout);
 
-	node_destroy(n);
+	root_destroy(r);
 	return EXIT_SUCCESS;
 }
