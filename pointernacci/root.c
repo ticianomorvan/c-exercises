@@ -6,7 +6,7 @@
 #include "root.h"
 
 struct s_root {
-	unsigned int size;
+unsigned int size;
 	struct s_node *first;
 	struct s_node *second_to_last;
 	struct s_node *last;
